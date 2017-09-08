@@ -126,6 +126,9 @@ In order to apply the `Roboto` font to this element, make sure you've imported `
         transition: -webkit-transform ease 0.28s;
         transition: transform ease 0.28s;
         will-change: transform;
+        -webkit-print-color-adjust: exact /* chrome */
+        color-adjust: exact /* firefox */
+        printer-colors: exact /* chrome */
       }
 
       :host([checked]) #offRadio {
